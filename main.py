@@ -27,3 +27,4 @@ async def getSubnets(ip: str, mask: int, subnets: int):
     sub = Subnet([int(bit) for bit in ip.split('.')], mask, subnets)
     isCountOfSubnetsValid(sub)
     return sub.calculateSubnets()
+
